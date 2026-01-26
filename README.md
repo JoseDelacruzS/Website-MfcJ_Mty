@@ -1,4 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# website-mfcj-mty
+
+## Descripción del Proyecto
+
+Este proyecto es una plataforma web informativa y de gestión para la Pastoral Juvenil, desarrollada en Next.js con React y Tailwind CSS, desplegada en Vercel. Integra funcionalidades de landing page, CMS para noticias, conexión con Facebook, y módulos escalables para generación de PDFs y recopilación de datos mediante Google Sheets, todo sin base de datos ni servidores propios.
+
+### Tecnologías principales
+- Next.js (React)
+- Tailwind CSS
+- Aceternity
+- HeroUI
+- React Icons
+- Vercel (deploy)
+
+## Estructura de la Plataforma
+
+### A. Home ("El Atrio Digital")
+Ruta: `/`
+Objetivo: Impacto visual y acceso rápido a lo urgente.
+
+**Componentes:**
+- Hero Section a pantalla completa con foto de fondo y lema del año.
+- Botones de acción: "Soy Nuevo" y "Soy Promotor".
+- Widget de actualidad: muestra los 3 últimos posts de Facebook (API Graph, diseño propio) y las 2 próximas noticias del CMS (Sanity).
+- Sección Mística Express: 3 iconos con texto breve (Formación, Servicio, Espiritualidad).
+- Banner de evento próximo con cuenta regresiva.
+
+### B. Sala de Prensa
+Ruta: `/noticias`
+Pantalla combinada para avisos, reseñas y espiritualidad.
+
+**Características:**
+- Filtros tipo pills: Todos, Avisos Oficiales, Reseñas, Espiritualidad.
+- Grid masonry con tarjetas de diferentes tamaños.
+- Infinite scroll para cargar más notas.
+- Detalle de noticia: título, fecha, autor, cuerpo rich text, galería de fotos (si aplica), relacionados.
+
+### C. El Ciclo
+Ruta: `/agenda`
+Muestra la planeación y el calendario de eventos.
+
+**Características:**
+- Vista calendario visual (react-big-calendar o similar) con puntos de color por tipo de evento.
+- Vista lista de próximos 3 meses.
+- Botón para agregar evento a Google Calendar.
+
+### D. Secretaría Virtual
+Ruta: `/recursos`
+Sistema de gestión y generador de formatos.
+
+**Secciones:**
+- Documentos estáticos: lista de PDFs descargables desde el CMS.
+- Generador de formatos: acceso mediante login de claves de sector, con opción de modal o ruta `/recursos/generador`.
+
+## Escalabilidad
+El sistema está preparado para integrar generación de PDFs y recopilación de datos a través de cuentas de Google Sheets, sin requerir base de datos ni servidores dedicados.
 
 ## Getting Started
 
