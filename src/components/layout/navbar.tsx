@@ -58,14 +58,14 @@ export const Navbar = () => {
         <NavbarBrand>
           <Link href="/" className="text-foreground flex gap-2 items-center">
             <div className="flex items-center justify-center">
-              <Image
-                src="/image/logo.png"
-                alt="Logo MFCJ Monterrey"
-                width={200}
-                height={200}
-                priority
-                className="w-16 h-2 md:w-10 md:h-20 object-contain"
-              />
+                <Image
+                    src="/image/logo.png"
+                    alt="Logo MFCJ Monterrey"
+                    width={200}
+                    height={200}
+                    priority
+                    className="w-16 h-2 md:w-10 md:h-20 object-contain"
+                />
             </div>
           </Link>
         </NavbarBrand>

@@ -1,11 +1,10 @@
+// tailwind.config.ts
 import { heroui } from "@heroui/react";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
     "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
@@ -14,27 +13,22 @@ const config: Config = {
         primary: "#fe9f28",
         secondary: "#02236f",
       },
+      animation: {
+        spotlight: "spotlight 5s ease .10s 1 forwards",
+      },
+      keyframes: {
+        spotlight: {
+          "0%": { opacity: "0", transform: "translate(-72%, -50%) scale(10)" },
+          "100%": { opacity: "1", transform: "translate(-50%,-40%) scale(1)" },
+        },
+        scroll: {
+          to: { transform: "translate(calc(-50% - 0.5rem))" },
+        },
+      },
     },
   },
   darkMode: "class",
-  plugins: [
-    heroui({
-      themes: {
-        light: {
-          colors: {
-            primary: {
-              DEFAULT: "#fe9f28",
-              foreground: "#ffffff",
-            },
-            secondary: {
-              DEFAULT: "#02236f",
-              foreground: "#ffffff",
-            },
-          },
-        },
-      },
-    }),
-    require("tailwindcss-animate"),
-  ],
+  plugins: [heroui(), require("tailwindcss-animate")],
 };
+
 export default config;

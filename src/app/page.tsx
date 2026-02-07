@@ -1,6 +1,10 @@
 // src/app/page.tsx
 import { Hero } from "@/components/home/hero";
 import { MisticaCards } from "@/components/home/misticaCards";
+import { VerseOfDay } from "@/components/home/versOfDay";
+import { Testimonials } from "@/components/home/testimonials";
+import { FaqSection } from "@/components/home/faqSection";
+import { GallerySection } from "@/components/home/gallerySection";  
 
 export default function Home() {
   return (
@@ -14,10 +18,10 @@ export default function Home() {
             <MisticaCards />
          </div>
       </section>
-      <section className="h-[50vh] flex items-center justify-center bg-muted/10">
-        <p className="text-muted">Próximamente: Versículo y Timeline...</p>
-      </section>
-
+      <GallerySection />
+      <VerseOfDay />
+      <Testimonials />
+      <FaqSection />
     </main>
   );
 }
