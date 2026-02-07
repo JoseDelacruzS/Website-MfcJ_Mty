@@ -1,5 +1,14 @@
+import type { Metadata } from "next";
 import "./globals.css";
 import { Providers } from "./providers";
+import { Navbar } from "@/components/layout/navbar";
+import { Footer } from "@/components/layout/footer";
+
+export const metadata: Metadata = {
+  title: "MFCJ Monterrey",
+  description:
+    "Plataforma oficial del Movimiento Familiar Cristiano Juvenil, Diocesis de Monterrey.",
+};
 
 export default function RootLayout({
   children,
@@ -7,10 +16,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es">
-      <body>
+    <html lang="es" className="dark">
+      <body className="antialiased min-h-screen flex flex-col">
         <Providers>
-          {children}
+          <Navbar />
+          <div className="flex-grow">{children}</div>
+          <Footer />
         </Providers>
       </body>
     </html>

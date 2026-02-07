@@ -1,37 +1,105 @@
 @import "tailwindcss";
+@plugin "tailwindcss-animate";
+@custom-variant dark (&:is(.dark *));
 @config "../../tailwind.config.ts";
 
 :root {
-  /* MODO CLARO */
-  --background: #f8f9fa;
-  --foreground: #181848; 
-  --card: #ffffff;
-  --primary: #304878;
-  --accent: #f0a818; 
-  --muted: #7890a8;  
+  --background: #ffffff;
+  --foreground: #02236f;
+
+  --card: #faf5ea;
+  --card-foreground: #02236f;
+  
+  --popover: #ffffff;
+  --popover-foreground: #02236f;
+
+  --primary: #fe9f28;
+  --primary-foreground: #ffffff;
+
+  --secondary: #02236f;
+  --secondary-foreground: #ffffff;
+
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+
+  --accent: #fe9f28;
+  --accent-foreground: #ffffff;
+
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: #fe9f28;
+  --radius: 0.5rem;
+  --parraf: #e0eafd;
 }
 
 .dark {
-  /* MODO OSCURO */
-  --background: #1b1c2b; 
+  /* --- MODO OSCURO (Estilo Aceternity / Espacial) --- */
+  --background: #1b1c2b;
   --foreground: #f0f0f0;
-  --card: #181848;
-  --primary: #304878;
-  --accent: #f0a818;
-  --muted: #7890a8;
+
+  --card: #2a2a4b; 
+  --card-foreground: #f0f0f0;
+
+  --popover: #181848;
+  --popover-foreground: #f0f0f0;
+
+  --primary: #fe9f28; 
+  --primary-foreground: #1b1c2b;
+
+  --secondary: #304878;  /* Azul medio */
+  --secondary-foreground: #ffffff;
+
+  --muted: #304878;
+  --muted-foreground: #94a3b8;
+
+  --accent: #f0a818;     /* Dorado */
+  --accent-foreground: #1b1c2b;
+
+  --destructive: #7f1d1d;
+  --destructive-foreground: #f0f0f0;
+
+  --border: #304878;
+  --input: #304878;
+  --ring: #f0a818;
 }
 
-@theme {
+/* Configuramos el tema para que Tailwind v4 entienda las variables */
+@theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
   --color-primary: var(--primary);
-  --color-accent: var(--accent);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
   --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  transition: background 0.3s ease, color 0.3s ease;
+/* Estilos base */
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
 }
