@@ -11,7 +11,18 @@ const nextConfig: NextConfig = {
         port: "",
         pathname: "/**",
       },
-      // Si usas otras fuentes en el futuro, agrégalas aquí
+      {
+        protocol: "https",
+        hostname: "**.fbcdn.net", 
+      },
+      {
+        protocol: "https",
+        hostname: "**.facebook.com", 
+      },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
     ],
   },
 };

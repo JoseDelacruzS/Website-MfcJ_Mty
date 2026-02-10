@@ -33,7 +33,7 @@ export const Hero = () => {
         </div>
 
         <TextGenerateEffect
-          words="Familias convertidas, corazones transformados."
+          words="Caminando juntos, con la mirada puesta en Jesus."
           className="drop-shadow-lg max-w-4xl"
         />
 

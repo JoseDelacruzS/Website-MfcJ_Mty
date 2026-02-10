@@ -29,7 +29,7 @@ export const Navbar = () => {
   return (
     <HeroNavbar
       onMenuOpenChange={setIsMenuOpen}
-      isMenuOpen={isMenuOpen} // Controlamos el estado explícitamente
+      isMenuOpen={isMenuOpen}
       isBordered
       maxWidth="xl"
       className="fixed top-0 z-50 bg-background/60 backdrop-blur-md border-b-1 border-white/10"
@@ -58,14 +58,14 @@ export const Navbar = () => {
         <NavbarBrand>
           <Link href="/" className="text-foreground flex gap-2 items-center">
             <div className="flex items-center justify-center">
-                <Image
-                    src="/image/logo.png"
-                    alt="Logo MFCJ Monterrey"
-                    width={200}
-                    height={200}
-                    priority
-                    className="w-16 h-2 md:w-10 md:h-20 object-contain"
-                />
+              <Image
+                src="/image/logo.png"
+                alt="Logo MFCJ Monterrey"
+                width={200}
+                height={200}
+                priority
+                className="w-12 h-12 md:w-10 md:h-20 object-contain"
+              />
             </div>
           </Link>
         </NavbarBrand>
@@ -91,7 +91,6 @@ export const Navbar = () => {
             as={Link}
             color="primary"
             href="/contacto"
-            variant="shadow"
             className="font-bold text-white"
           >
             Contacto

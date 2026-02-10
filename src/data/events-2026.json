@@ -1,0 +1,175 @@
+[
+  {
+    "id": 1,
+    "title": "Asamblea Diocesana",
+    "date": "2026-01-18",
+    "displayDate": "18 Enero",
+    "category": "reunion",
+    "description": "Inicio de actividades y planeación."
+  },
+  {
+    "id": 2,
+    "title": "Miércoles de Ceniza",
+    "date": "2026-02-18",
+    "displayDate": "18 Febrero",
+    "category": "espiritual",
+    "description": "Inicio de la Cuaresma."
+  },
+  {
+    "id": 3,
+    "title": "Taller de Metodología",
+    "date": "2026-03-15",
+    "displayDate": "15 Marzo",
+    "category": "formacion",
+    "description": "Capacitación para promotores y equipo."
+  },
+  {
+    "id": 4,
+    "title": "Caminando Juntos",
+    "date": "2026-03-28",
+    "displayDate": "28 Marzo",
+    "category": "integracion",
+    "description": "Evento de convivencia diocesana."
+  },
+  {
+    "id": 5,
+    "title": "Retiro de Semana Santa",
+    "date": "2026-03-30",
+    "endDate": "2026-04-12",
+    "displayDate": "30 Mar - 12 Abr",
+    "category": "retiro",
+    "description": "Vivencia espiritual de la Pasión y Pascua."
+  },
+  {
+    "id": 6,
+    "title": "Encuentro Nacional Juvenil",
+    "date": "2026-04-17",
+    "endDate": "2026-04-19",
+    "displayDate": "17-19 Abril",
+    "category": "nacional",
+    "description": "Reunión con jóvenes de todo el país."
+  },
+  {
+    "id": 7,
+    "title": "Caminando Juntos Formativo",
+    "date": "2026-05-03",
+    "displayDate": "03 Mayo",
+    "category": "formacion",
+    "description": "Dinámica de integración y aprendizaje."
+  },
+  {
+    "id": 8,
+    "title": "Intramefeciada",
+    "date": "2026-05-17",
+    "displayDate": "17 Mayo",
+    "category": "social",
+    "description": "Evento deportivo y cultural."
+  },
+  {
+    "id": 9,
+    "title": "Servicio con Adolescentes",
+    "date": "2026-05-30",
+    "displayDate": "30 Mayo",
+    "category": "servicio",
+    "description": "Actividad de caridad y apoyo."
+  },
+  {
+    "id": 10,
+    "title": "Encuentro Para Adolescentes (EPA)",
+    "date": "2026-06-13",
+    "endDate": "2026-06-14",
+    "displayDate": "13-14 Junio",
+    "category": "retiro",
+    "description": "Retiro especial para adolescentes."
+  },
+  {
+    "id": 11,
+    "title": "Simulacro Encuentro de Pesca",
+    "date": "2026-07-05",
+    "displayDate": "05 Julio",
+    "category": "formacion",
+    "description": "Preparación para el evento de Pesca."
+  },
+  {
+    "id": 12,
+    "title": "Caminando Juntos",
+    "date": "2026-07-25",
+    "displayDate": "25 Julio",
+    "category": "integracion",
+    "description": "Convivencia de verano."
+  },
+  {
+    "id": 13,
+    "title": "Jornada Nacional Juvenil",
+    "date": "2026-08-15",
+    "endDate": "2026-08-16",
+    "displayDate": "15-16 Agosto",
+    "category": "nacional",
+    "description": "Evento nacional de formación y espiritualidad."
+  },
+  {
+    "id": 14,
+    "title": "Servicio: Día del Abuelo",
+    "date": "2026-08-29",
+    "displayDate": "29 Agosto",
+    "category": "servicio",
+    "description": "Servicio con jóvenes para los abuelos."
+  },
+  {
+    "id": 15,
+    "title": "Misa de Inicio de Ciclo",
+    "date": "2026-09-12",
+    "displayDate": "12 Septiembre",
+    "category": "espiritual",
+    "description": "Eucaristía de apertura del nuevo ciclo."
+  },
+  {
+    "id": 16,
+    "title": "Taller de Liderazgo Místico",
+    "date": "2026-09-20",
+    "displayDate": "20 Septiembre",
+    "category": "formacion",
+    "description": "Formación de líderes cristianos."
+  },
+  {
+    "id": 17,
+    "title": "Día del MFCISTA",
+    "date": "2026-10-04",
+    "displayDate": "04 Octubre",
+    "category": "celebracion",
+    "description": "Celebración de la identidad del movimiento."
+  },
+  {
+    "id": 18,
+    "title": "Kerygma",
+    "date": "2026-10-16",
+    "endDate": "2026-10-18",
+    "displayDate": "16-18 Octubre",
+    "category": "retiro",
+    "description": "Retiro de anuncio del primer amor."
+  },
+  {
+    "id": 19,
+    "title": "Caminando Juntos",
+    "date": "2026-10-31",
+    "displayDate": "31 Octubre",
+    "category": "integracion",
+    "description": "Convivencia de otoño."
+  },
+  {
+    "id": 20,
+    "title": "Peregrinación Diocesana",
+    "date": "2026-11-07",
+    "displayDate": "07 Noviembre",
+    "category": "espiritual",
+    "description": "Caminata de fe diocesana."
+  },
+  {
+    "id": 21,
+    "title": "Posada Juvenil",
+    "date": "2026-12-06",
+    "displayDate": "06 Diciembre",
+    "category": "celebracion",
+    "description": "Celebración navideña del grupo."
+  }
+]

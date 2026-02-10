@@ -61,11 +61,6 @@ export const Footer = () => {
                   Descargables
                 </Link>
               </li>
-              <li>
-                <Link href="#" className="text-gray-300 hover:text-white">
-                  Galería Histórica
-                </Link>
-              </li>
             </ul>
           </div>
 

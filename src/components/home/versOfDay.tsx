@@ -9,8 +9,7 @@ export const VerseOfDay = () => {
   const { verse, loading } = useBibleVerse();
 
   return (
-    <section className="w-full py-16 flex items-center justify-center overflow-hidden bg-secondary">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-blue-500/20 rounded-full blur-[120px] pointer-events-none" />
+    <section className="py-16 flex items-center justify-center overflow-hidden bg-secondary">
 
       <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-primary/10 rounded-full blur-[100px] pointer-events-none" />
 
