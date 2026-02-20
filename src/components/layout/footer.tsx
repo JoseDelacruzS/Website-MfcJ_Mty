@@ -1,7 +1,7 @@
 "use client";
 
 import { Link } from "@heroui/react";
-import { Facebook, Instagram, Youtube, MapPin, Mail } from "lucide-react";
+import { Facebook, Instagram, MapPin, Mail } from "lucide-react";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();

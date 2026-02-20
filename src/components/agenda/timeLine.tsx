@@ -1,6 +1,6 @@
 import React from "react";
 import eventsData from "@/data/events-2026.json";
-import { Calendar, CalendarPlus, MapPin, ArrowRight } from "lucide-react"; // Importamos CalendarPlus
+import { Calendar, CalendarPlus } from "lucide-react";
 
 interface Event {
   id: number;
