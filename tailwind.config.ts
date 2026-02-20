@@ -28,6 +28,7 @@ const config: Config = {
     },
   },
   darkMode: "class",
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
   plugins: [heroui(), require("tailwindcss-animate")],
 };
 

@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "MFCJ Monterrey",
   description:
     "Plataforma oficial del Movimiento Familiar Cristiano Juvenil, Diocesis de Monterrey.",
+  icons: {
+    icon: "/logo-mfcj.ico",
+  },
 };
 
 export default function RootLayout({

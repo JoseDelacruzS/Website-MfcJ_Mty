@@ -1,0 +1,369 @@
+[
+  {
+    "id": 1,
+    "title": "700 Dinámicas",
+    "description": "Dinamicas para romper el hielo y conocerse mejor.",
+    "category": "integracion",
+    "type": "pdf",
+    "size": "15.2 MB",
+    "url": "/docs/700 Dinámicas.pdf"
+  },
+  {
+    "id": 2,
+    "title": "Dinamicas MFC",
+    "description": "Dinamicas para romper el hielo y conocerse mejor.",
+    "category": "integracion",
+    "type": "pdf",
+    "size": "19.7 MB",
+    "url": "/docs/Dinamicas MFC.pdf"
+  },
+  {
+    "id": 3,
+    "title": "Oraciones Iniciales 2026",
+    "description": "Oraciones para iniciar el ciclo.",
+    "category": "liturgia",
+    "type": "pdf",
+    "size": "12 MB",
+    "url": "/docs/Oraciones Iniciales.pdf"
+  },
+  {
+    "id": 4,
+    "title": "Formato DA-01",
+    "description": "Concentrado de membresia para adolescentes en la diócesis.",
+    "category": "formatos adolescentes", 
+    "type": "pdf",
+    "size": "141 KB",
+    "url": "/docs/formato-adolescentes/FORMATO DA-01.pdf"
+  },
+  {
+    "id": 5,
+    "title": "Formato SA-01",
+    "description": "Ficha para encuentro de pesca.",
+    "category": "formatos adolescentes",
+    "type": "pdf",
+    "size": "133 KB",
+    "url": "/docs/formato-adolescentes/FORMATO SA-01.pdf"
+  },
+  {
+    "id": 6,
+    "title": "Formato SA-02",
+    "description": "Registro de Inscripcion Adolescente.",
+    "category": "formatos adolescentes",
+    "type": "pdf",
+    "size": "261 KB",
+    "url": "/docs/formato-adolescentes/FORMATO SA-02.pdf"
+  },
+  {
+    "id": 7,
+    "title": "Formato SA-03",
+    "description": "Concentrado de membredia, adolescentes del sector.",
+    "category": "formatos adolescentes",
+    "type": "pdf",
+    "size": "141 KB",
+    "url": "/docs/formato-adolescentes/FORMATO SA-03.pdf"
+  },
+  {
+    "id": 8,
+    "title": "Formato SA-04",
+    "description": "Reporte de la reunion de formacion de equipo basico.",
+    "category": "formatos adolescentes",
+    "type": "pdf",
+    "size": "135 KB",
+    "url": "/docs/formato-adolescentes/FORMATO SA-04.pdf"
+  },
+  {
+    "id": 9,
+    "title": "Formato SA-05",
+    "description": "Hoja de control del joven promotor de equipo basico.",
+    "category": "formatos adolescentes",
+    "type": "pdf",
+    "size": "143 KB",
+    "url": "/docs/formato-adolescentes/FORMATO SA-05.pdf"
+  },
+  {
+    "id": 10,
+    "title": "Formato SA-06",
+    "description": "Hoja de control del joven de zona.",
+    "category": "formatos adolescentes",
+    "type": "pdf",
+    "size": "140 KB",
+    "url": "/docs/formato-adolescentes/FORMATO SA-06.pdf"
+  },
+  {
+    "id": 11,
+    "title": "Formato SA-07",
+    "description": "Reporte de baja.",
+    "category": "formatos adolescentes",
+    "type": "pdf",
+    "size": "130 KB",
+    "url": "/docs/formato-adolescentes/FORMATO SA-07.pdf"
+  },
+  {
+    "id": 12,
+    "title": "Formato SA-08",
+    "description": "Reporte de servicio (Por equipos).",
+    "category": "formatos adolescentes",
+    "type": "pdf",
+    "size": "146 KB",
+    "url": "/docs/formato-adolescentes/FORMATO SA-08.pdf"
+  },
+  {
+    "id": 13,
+    "title": "Formato SA-09",
+    "description": "Directorio de Adolescentes.",
+    "category": "formatos adolescentes",
+    "type": "pdf",
+    "size": "130 KB",
+    "url": "/docs/formato-adolescentes/FORMATO SA-09.pdf"
+  },
+  {
+    "id": 14,
+    "title": "Formato SA-10",
+    "description": "Control de aportaciones de equipo.",
+    "category": "formatos adolescentes",
+    "type": "pdf",
+    "size": "132 KB",
+    "url": "/docs/formato-adolescentes/FORMATO SA-10.pdf"
+  },
+  {
+    "id": 15,
+    "title": "Formato SA-11",
+    "description": "Taller de Servicio (Compromisos personales).",
+    "category": "formatos adolescentes",
+    "type": "pdf",
+    "size": "180 KB",
+    "url": "/docs/formato-adolescentes/FORMATO SA-11.pdf"
+  },
+  {
+    "id": 16,
+    "title": "Formato DJ-01",
+    "description": "Concentrado de membresia de jovenes en la diócesis.",
+    "category": "formatos jovenes",
+    "type": "pdf",
+    "size": "635 KB",
+    "url": "/docs/formato-jovenes/FORMATO DJ-01.pdf"
+  },
+  {
+    "id": 17,
+    "title": "Formato SJ-01",
+    "description": "Ficha de encuentro de pesca.",
+    "category": "formatos jovenes",
+    "type": "pdf",
+    "size": "165 KB",
+    "url": "/docs/formato-jovenes/FORMATO SJ-01.pdf"
+  },
+  {
+    "id": 18,
+    "title": "Formato SJ-02",
+    "description": "Registro de inscripcion de jovenes.",
+    "category": "formatos jovenes",
+    "type": "pdf",
+    "size": "314 KB",
+    "url": "/docs/formato-jovenes/FORMATO SJ-02.pdf"
+  },
+  {
+    "id": 19,
+    "title": "Formato SJ-03",
+    "description": "Concentrado de membresia de jovenes en el sector.",
+    "category": "formatos jovenes",
+    "type": "pdf",
+    "size": "193 KB",
+    "url": "/docs/formato-jovenes/FORMATO SJ-03.pdf"
+  },
+  {
+    "id": 20,
+    "title": "Formato SJ-04",
+    "description": "Hoja de control del joven promotor de equipo basico.",
+    "category": "formatos jovenes",
+    "type": "pdf",
+    "size": "181 KB",
+    "url": "/docs/formato-jovenes/FORMATO SJ-04.pdf"
+  },
+  {
+    "id": 21,
+    "title": "Formato SJ-05",
+    "description": "Hoja de control del joven promotor de equipo basico.",
+    "category": "formatos jovenes",
+    "type": "pdf",
+    "size": "185 KB",
+    "url": "/docs/formato-jovenes/FORMATO SJ-05.pdf"
+  },
+  {
+    "id": 22,
+    "title": "Formato SJ-06",
+    "description": "Hoja de control del joven de zona.",
+    "category": "formatos jovenes",
+    "type": "pdf",
+    "size": "184 KB",
+    "url": "/docs/formato-jovenes/FORMATO SJ-06.pdf"
+  },
+  {
+    "id": 23,
+    "title": "Formato SJ-07",
+    "description": "Reporte de baja.",
+    "category": "formatos jovenes",
+    "type": "pdf",
+    "size": "171 KB",
+    "url": "/docs/formato-jovenes/FORMATO SJ-07.pdf"
+  },
+  {
+    "id": 24,
+    "title": "Formato SJ-08",
+    "description": "Reporte de Servicios",
+    "category": "formatos jovenes",
+    "type": "pdf",
+    "size": "184 KB",
+    "url": "/docs/formato-jovenes/FORMATO SJ-08.pdf"
+  },
+  {
+    "id": 25,
+    "title": "Formato SJ-09",
+    "description": "Directorio de Jovenes.",
+    "category": "formatos jovenes",
+    "type": "pdf",
+    "size": "209 KB",
+    "url": "/docs/formato-jovenes/FORMATO SJ-09.pdf"
+  },
+  {
+    "id": 26,
+    "title": "Formato SJ-10",
+    "description": "Control de aportaciones de equipo.",
+    "category": "formatos jovenes",
+    "type": "pdf",
+    "size": "228 KB",
+    "url": "/docs/formato-jovenes/FORMATO SJ-10.pdf"
+  },
+  {
+    "id": 27,
+    "title": "Formato SJ-11",
+    "description": "Taller de Servicio (Compromisos personales).",
+    "category": "formatos jovenes",
+    "type": "pdf",
+    "size": "185 KB",
+    "url": "/docs/formato-jovenes/FORMATO SJ-11.pdf"
+  }, {
+    "id": 28,
+    "title": "Formato SJ-12",
+    "description": "Formato de entrega de dinero",
+    "category": "formatos jovenes",
+    "type": "pdf",
+    "size": "261 KB",
+    "url": "/docs/formato-jovenes/FORMATO SJ-12.pdf"
+  }, {
+    "id": 29,
+    "title": "Temas de Nivel 0",
+    "description": "Temas de Nivel 0 para jovenes.",
+    "category": "formacion",
+    "type": "pdf",
+    "size": "1.26 MB",
+    "url": "/docs/nivel-0/Nivel_0.pdf"
+  },
+  {
+    "id": 30,
+    "title": "Cartas Descriptivas Ado 1",
+    "description": "Cartas Descriptivas para el promotor de Adolescentes 1.",
+    "category": "formacion",
+    "type": "pdf",
+    "size": "7.52 MB",
+    "url": "/docs/guia-adolescentes/Adolescentes 1.pdf"
+  },
+  {
+    "id": 31,
+    "title": "Cartas Descriptivas Ado 2",
+    "description": "Cartas Descriptivas para el promotor de Adolescentes 2.",
+    "category": "formacion",
+    "type": "pdf",
+    "size": "1.58 MB",
+    "url": "/docs/guia-adolescentes/Adolescentes 2.pdf"
+  },
+  {
+    "id": 32,
+    "title": "Cartas Descriptivas Ado 3",
+    "description": "Cartas Descriptivas para el promotor de Adolescentes 3.",
+    "category": "formacion",
+    "type": "pdf",
+    "size": "1.61 MB",
+    "url": "/docs/guia-adolescentes/Adolescentes 3.pdf"
+  },
+  {
+    "id": 33,
+    "title": "Guia Constructores Nivel 1",
+    "description": "Guia para el promotor de Jovenes Nivel 1.",
+    "category": "formacion",
+    "type": "pdf",
+    "size": "27.8 MB",
+    "url": "/docs/guia-jovenes/Constructores Nivel 1 - Guía del Joven Promotor.pdf"
+  },
+  {
+    "id": 34,
+    "title": "Guia Constructores Nivel 2",
+    "description": "Guia para el promotor de Jovenes Nivel 2.",
+    "category": "formacion",
+    "type": "pdf",
+    "size": "17 MB",
+    "url": "/docs/guia-jovenes/Constructores Nivel 2 - Guía del Joven Promotor.pdf"
+  },
+  {
+    "id": 35,
+    "title": "Guia Constructores Nivel 3",
+    "description": "Guia para el promotor de Jovenes Nivel 3.",
+    "category": "formacion",
+    "type": "pdf",
+    "size": "18.3 MB",
+    "url": "/docs/guia-jovenes/Constructores Nivel 3 - Guía del Joven Promotor.pdf"
+  },
+  {
+    "id": 36,
+    "title": "Guia Descubridores Nivel 1",
+    "description": "Guia para el promotor de Jovenes Nivel 4.",
+    "category": "formacion",
+    "type": "pdf",
+    "size": "19.5 MB",
+    "url": "/docs/guia-jovenes/Descubridores Nivel 1 - Guía del Joven Promotor.pdf"
+  },
+  {
+    "id": 37,
+    "title": "Guia Descubridores Nivel 2",
+    "description": "Guia para el promotor de Jovenes Nivel 5.",
+    "category": "formacion",
+    "type": "pdf",
+    "size": "17.2 MB",
+    "url": "/docs/guia-jovenes/Descubridores Nivel 2 - Guía del Joven Promotor.pdf"
+  },
+  {
+    "id": 38,
+    "title": "Guia Descubridores Nivel 3",
+    "description": "Guia para el promotor de Jovenes Nivel 6.",
+    "category": "formacion",
+    "type": "pdf",
+    "size": "15.1 MB",
+    "url": "/docs/guia-jovenes/Descubridores Nivel 3 - Guía del Joven Promotor.pdf"
+  },
+  {
+    "id": 39,
+    "title": "Guia Exploradores Nivel 1",
+    "description": "Guia para el promotor de Jovenes Nivel 7.",
+    "category": "formacion",
+    "type": "pdf",
+    "size": "22.9 MB",
+    "url": "/docs/guia-jovenes/Exploradores Nivel 1 - Guía del Joven Promotor.pdf"
+  },
+  {
+    "id": 40,
+    "title": "Guia Exploradores Nivel 2",
+    "description": "Guia para el promotor de Jovenes Nivel 8.",
+    "category": "formacion",
+    "type": "pdf",
+    "size": "15.5 MB",
+    "url": "/docs/guia-jovenes/Exploradores Nivel 2 - Guía del Joven Promotor.pdf"
+  },
+  {
+    "id": 41,
+    "title": "Guia Exploradores Nivel 3",
+    "description": "Guia para el promotor de Jovenes Nivel 9.",
+    "category": "formacion",
+    "type": "pdf",
+    "size": "14 MB",
+    "url": "/docs/guia-jovenes/Exploradores Nivel 3 - Guía del Joven Promotor.pdf"
+  }
+]

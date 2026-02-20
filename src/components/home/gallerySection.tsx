@@ -7,25 +7,22 @@ export const GallerySection = () => {
   return (
     <section className="py-24 bg-background relative" id="galeria">
       <div className="container mx-auto px-6">
-        
-        <motion.div 
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-16 space-y-4"
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-16 space-y-4"
         >
-             <h2 className="text-4xl md:text-5xl font-bold text-secondary dark:text-white">
-                Momentos <span className="text-primary">Eternos</span>
-             </h2>
-             <div className="w-24 h-1 bg-primary mx-auto rounded-full" />
-             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto font-light italic">
-                &quot;No recordamos días, recordamos los momentos donde Dios tocó nuestro corazón.&quot;
-             </p>
+          <h2 className="text-4xl md:text-5xl font-bold text-secondary dark:text-white">
+            Momentos <span className="text-primary">Eternos</span>
+          </h2>
+          <div className="w-24 h-1 bg-primary mx-auto rounded-full" />
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto font-light italic">
+            &quot;No recordamos días, recordamos los momentos donde Dios tocó
+            nuestro corazón.&quot;
+          </p>
         </motion.div>
-
-        {/* --- GALERÍA BENTO --- */}
-        {/* Altura ajustada para que se vea bien en desktop */}
         <div className="h-screen py-4 w-full">
           <LayoutGrid cards={cards} />
         </div>
@@ -34,27 +31,29 @@ export const GallerySection = () => {
   );
 };
 
-// --- CONTENIDO DE LAS TARJETAS ---
-// Aquí defines el texto que sale cuando le pican a la foto
 const SkeletonOne = () => {
   return (
     <div>
-      <p className="font-bold text-2xl md:text-4xl text-white">La Pesca 2025</p>
+      <p className="font-bold text-2xl md:text-4xl text-white">
+        Peregrinacion 2023
+      </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        80 jóvenes valientes desconectándose del mundo para encontrarse a sí mismos.
+        Todoa la diocesis reunida para alabar a nuestra Madre Maria de
+        Guadalupe.
       </p>
     </div>
   );
 };
-
 const SkeletonTwo = () => {
   return (
     <div>
-      <p className="font-bold text-2xl md:text-4xl text-white">Misiones Semana Santa</p>
+      <p className="font-bold text-2xl md:text-4xl text-white">
+        Equipo de Servicio del Kerigma 2024
+      </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        Llevando esperanza a las comunidades. Servir es amar.
+        Jóvenes entregados al servicio de Dios y de los hermanos.
       </p>
     </div>
   );
@@ -62,10 +61,12 @@ const SkeletonTwo = () => {
 const SkeletonThree = () => {
   return (
     <div>
-      <p className="font-bold text-2xl md:text-4xl text-white">Noches de Adoración</p>
+      <p className="font-bold text-2xl md:text-4xl text-white">
+        MFCeciada 2024
+      </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        Momentos íntimos frente al Santísimo. Donde recargamos fuerzas.
+        Evento deportivo y cultural en Saltillo.
       </p>
     </div>
   );
@@ -73,7 +74,36 @@ const SkeletonThree = () => {
 const SkeletonFour = () => {
   return (
     <div>
-      <p className="font-bold text-2xl md:text-4xl text-white">Posada MFCJ</p>
+      <p className="font-bold text-2xl md:text-4xl text-white">
+        Reunion de Bloque Regional
+      </p>
+      <p className="font-normal text-base text-white"></p>
+      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+        Equipos de diferentes diócesis reunidos para compartir y crecer en la
+        fe.
+      </p>
+    </div>
+  );
+};
+const SkeletonFive = () => {
+  return (
+    <div>
+      <p className="font-bold text-2xl md:text-4xl text-white">
+        Viviendo al maximo la MFCiada 2024
+      </p>
+      <p className="font-normal text-base text-white"></p>
+      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+        Momentos de alegría, convivencia y crecimiento en la fe.
+      </p>
+    </div>
+  );
+};
+const SkeletonSix = () => {
+  return (
+    <div>
+      <p className="font-bold text-2xl md:text-4xl text-white">
+        Posada MFCJ 2023
+      </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
         Celebrando en familia. Porque la santidad también es alegría.
@@ -81,39 +111,80 @@ const SkeletonFour = () => {
     </div>
   );
 };
-
-// --- CONFIGURACIÓN DE FOTOS ---
-// col-span-1 = Cuadrado pequeño
-// md:col-span-2 = Rectángulo ancho (Horizontal)
-// row-span-2 (si lo agregas al css) = Rectángulo alto (Vertical)
+const SkeletonSeven = () => {
+  return (
+    <div>
+      <p className="font-bold text-2xl md:text-4xl text-white">
+        Misiones de Semana Santa
+      </p>
+      <p className="font-normal text-base text-white"></p>
+      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+        Llevando esperanza a las comunidades. Servir es amar.
+      </p>
+    </div>
+  );
+};
+const SkeletonEight = () => {
+  return (
+    <div>
+      <p className="font-bold text-2xl md:text-4xl text-white">
+        Misa de Inicio de Ciclo
+      </p>
+      <p className="font-normal text-base text-white"></p>
+      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+        Iniciando un nuevo ciclo de servicio y evangelización.
+      </p>
+    </div>
+  );
+};
 
 const cards = [
   {
     id: 1,
     content: <SkeletonOne />,
-    className: "md:col-span-2", // FOTO GRANDE PRINCIPAL
-    thumbnail:
-      "https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=3270&auto=format&fit=crop", 
+    className: "md:col-span-2",
+    thumbnail: "/image/ciclo/foto-1.jpg",
   },
   {
     id: 2,
     content: <SkeletonTwo />,
     className: "col-span-1",
-    thumbnail:
-      "https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=3270&auto=format&fit=crop",
+    thumbnail: "/image/ciclo/foto-2.jpg",
   },
   {
     id: 3,
     content: <SkeletonThree />,
     className: "col-span-1",
-    thumbnail:
-      "https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?q=80&w=3270&auto=format&fit=crop",
+    thumbnail: "/image/ciclo/foto-3.jpg",
   },
   {
     id: 4,
     content: <SkeletonFour />,
-    className: "md:col-span-2", // FOTO GRANDE FINAL
-    thumbnail:
-      "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?q=80&w=3269&auto=format&fit=crop",
+    className: "md:col-span-2",
+    thumbnail: "/image/ciclo/foto-4.jpg",
+  },
+  {
+    id: 5,
+    content: <SkeletonFive />,
+    className: "col-span-1",
+    thumbnail: "/image/ciclo/foto-5.jpg",
+  },
+  {
+    id: 6,
+    content: <SkeletonSix />,
+    className: "md:col-span-2",
+    thumbnail: "/image/ciclo/foto-6.jpg",
+  },
+  {
+    id: 7,
+    content: <SkeletonSeven />,
+    className: "md:col-span-2",
+    thumbnail: "/image/ciclo/foto-9.jpg",
+  },
+  {
+    id: 8,
+    content: <SkeletonEight />,
+    className: "col-span-1",
+    thumbnail: "/image/ciclo/foto-8.jpg",
   },
 ];

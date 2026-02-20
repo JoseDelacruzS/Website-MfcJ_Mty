@@ -1,7 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   reactCompiler: true,
   images: {
     remotePatterns: [
@@ -13,11 +12,11 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
-        hostname: "**.fbcdn.net", 
+        hostname: "**.fbcdn.net",
       },
       {
         protocol: "https",
-        hostname: "**.facebook.com", 
+        hostname: "**.facebook.com",
       },
       {
         protocol: "https",
