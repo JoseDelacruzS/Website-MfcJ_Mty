@@ -53,22 +53,27 @@ export const ResourceLibrary = () => {
   }, [search, selectedCategory]);
 
   return (
-    <div className="w-full max-w-6xl mx-auto px-4 md:px-6 -mt-20 relative z-20">
-      <div className="bg-card/80 backdrop-blur-md border border-white/10 p-4 md:p-6 rounded-3xl shadow-2xl mb-12">
-        <div className="flex flex-col md:flex-row gap-6 justify-between items-center">
-          <div className="w-full md:w-auto overflow-x-auto pb-2 md:pb-0 scrollbar-hide">
+    // CAMBIO: -mt-8 en móvil, -mt-20 en desktop para evitar empalmes
+    <div className="w-full max-w-6xl mx-auto px-4 md:px-6 -mt-8 md:-mt-20 relative z-20">
+      {/* BARRA DE CONTROL */}
+      <div className="bg-card/80 backdrop-blur-md border border-white/10 p-4 md:p-6 rounded-2xl md:rounded-3xl shadow-2xl mb-8 md:mb-12">
+        <div className="flex flex-col md:flex-row gap-4 md:gap-6 justify-between items-center w-full">
+          {/* Pestañas con Scroll Horizontal Optimizado para Móvil */}
+          {/* CAMBIO: -mx-4 px-4 permite que el scroll llegue hasta el borde de la pantalla en celular */}
+          <div className="w-full md:w-auto overflow-x-auto pb-2 md:pb-0 scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0">
             <Tabs
               aria-label="Categorías"
               color="primary"
               variant="underlined"
               classNames={{
                 base: "w-full md:w-auto",
+                // CAMBIO: flex-nowrap asegura que las pestañas no se bajen de línea
                 tabList:
-                  "w-full md:w-auto gap-4 md:gap-6 relative rounded-none p-0 border-b border-divider",
+                  "w-full md:w-auto gap-2 md:gap-6 relative rounded-none p-0 border-b border-divider flex-nowrap",
                 cursor: "w-full bg-primary",
                 tab: "max-w-fit px-2 h-10 md:h-12",
                 tabContent:
-                  "group-data-[selected=true]:text-primary text-white/60 font-medium text-sm md:text-base",
+                  "group-data-[selected=true]:text-primary text-white/60 font-medium text-xs md:text-sm whitespace-nowrap",
               }}
               selectedKey={selectedCategory}
               onSelectionChange={(key) => setSelectedCategory(key as string)}
@@ -77,14 +82,16 @@ export const ResourceLibrary = () => {
               <Tab key="formacion" title="Formación" />
               <Tab key="integracion" title="Integración" />
               <Tab key="liturgia" title="Liturgia" />
-              <Tab key="formatos jovenes" title="Formatos Jóvenes" />
-              <Tab key="formatos adolescentes" title="Formatos Adolescentes" />
+              <Tab key="formatos jovenes" title="Form. Jóvenes" />
+              <Tab key="formatos adolescentes" title="Form. Adolescentes" />
             </Tabs>
           </div>
-          <div className="w-full md:w-auto">
+
+          {/* Buscador */}
+          <div className="w-full md:w-auto shrink-0 mt-2 md:mt-0">
             <Input
               classNames={{
-                base: "w-full md:w-64 h-10",
+                base: "w-full md:w-72 h-10 md:h-12",
                 mainWrapper: "h-full",
                 input: "text-small",
                 inputWrapper:
@@ -96,41 +103,45 @@ export const ResourceLibrary = () => {
               type="search"
               value={search}
               onValueChange={setSearch}
+              isClearable
+              onClear={() => setSearch("")}
             />
           </div>
         </div>
       </div>
 
+      {/* GRID DE RECURSOS */}
       {filteredResources.length > 0 ? (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 pb-24">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 pb-24">
           {filteredResources.map((item) => (
             <Card
               key={item.id}
-              className="bg-card/70 hover:border-primary/50 transition-all hover:-translate-y-1"
+              className="bg-card/70 border border-white/5 hover:border-primary/50 transition-all hover:-translate-y-1"
             >
-              <CardBody className="flex flex-row gap-4 items-start p-4 md:p-5">
-                <div className="p-3 bg-white/5 rounded-xl border border-white/5 shrink-0">
+              <CardBody className="flex flex-row gap-3 md:gap-4 items-start p-4 md:p-5">
+                <div className="p-2 md:p-3 bg-white/5 rounded-xl border border-white/5 shrink-0">
                   {getIconByType(item.type)}
                 </div>
-                <div className="flex flex-col gap-1 min-w-0">
-                  {" "}
-                  <h3 className="text-base md:text-lg font-bold text-white leading-tight truncate">
+
+                <div className="flex flex-col gap-1 min-w-0 w-full">
+                  <h3 className="text-sm md:text-base font-bold text-white leading-tight truncate">
                     {item.title}
                   </h3>
-                  <p className="text-small text-white/50 line-clamp-2">
+                  <p className="text-xs md:text-sm text-white/50 line-clamp-2">
                     {item.description}
                   </p>
-                  <div className="flex gap-2 mt-2">
+
+                  <div className="flex gap-2 mt-1 md:mt-2 items-center">
                     <Chip
                       size="sm"
                       variant="flat"
                       color="default"
-                      className="text-[10px] uppercase h-6"
+                      className="text-[9px] md:text-[10px] uppercase h-5 md:h-6"
                     >
                       {item.type}
                     </Chip>
                     {item.size && (
-                      <span className="text-[10px] text-white/30 self-center">
+                      <span className="text-[10px] text-white/30">
                         {item.size}
                       </span>
                     )}
@@ -146,7 +157,7 @@ export const ResourceLibrary = () => {
                   fullWidth
                   color="secondary"
                   variant="solid"
-                  className="font-bold"
+                  className="font-bold text-xs md:text-sm"
                   size="sm"
                   endContent={
                     item.type === "link" ? (
@@ -156,15 +167,15 @@ export const ResourceLibrary = () => {
                     )
                   }
                 >
-                  {item.type === "link" ? "Abrir enlace" : "Descargar"}
+                  {item.type === "link" ? "Abrir" : "Descargar"}
                 </Button>
               </CardFooter>
             </Card>
           ))}
         </div>
       ) : (
-        <div className="text-center py-20">
-          <p className="text-white/40 text-lg mb-4">
+        <div className="text-center py-20 px-4">
+          <p className="text-white/40 text-base md:text-lg mb-4">
             No encontramos nada con ese nombre 😢
           </p>
           <Button

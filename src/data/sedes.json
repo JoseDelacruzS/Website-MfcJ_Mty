@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "parroquia": "Casa del MFC",
+    "sector": "Diocesis de Monterrey",
+    "direccion": "Loma Redonda 216, Loma Larga, 64710 Monterrey, N.L.",
+    "coordinadores": "Sebastian Cruz",
+    "telefono": "8125801548",
+    "coords": [25.665428035490606, -100.33843750491938] ,
+    "colors":["#E0FFFF", "#D3D3D3"]
+  },
+  {
+    "id": 2,
+    "parroquia": "Parroquia San Juan Pablo Segundo",
+    "sector": "Sector Santa Ana",
+    "direccion": "Av. Misón Arcos 227, col, Misión San Juan, 66023 Parque Industrial Cdad. Mitras, N.L.",
+    "coordinadores": "Jorge Valderrama",
+    "telefono": "8126983840",
+    "coords": [25.785135554725933, -100.46314185938252] ,
+    "colors":[ "#0000FF","#F0FFFF"]
+  },
+  {
+    "id": 3,
+    "parroquia": "Parroquia El Espiritu Santo",
+    "sector": "Sector Sagrada Familia",
+    "direccion": "Palacio de Justicia 500, Anáhuac, 66450 San Nicolás de los Garza, N.L.",
+    "coordinadores": "Fernanda Gomez",
+    "telefono": "8111926713",
+    "coords": [25.73822570305139, -100.30764986668648],
+    "colors":["#FFD700", "#DAA520"]
+  },
+  {
+    "id": 4,
+    "parroquia": "San Martín de Porres",
+    "sector": "Sector San Francisco Javier",
+    "direccion": "Río Bravo 1100, Dos Ríos Sector II, 67134 Guadalupe, N.L.",
+    "coordinadores": "Yamileth Hernández",
+    "telefono": "8115857294",
+    "coords": [25.67768821666717, -100.15824644514082],
+    "colors":["#CD5C5C", "#B22222"]
+  },{
+    "id": 5,
+    "parroquia": "Parroquia María Reina de la Paz",
+    "sector": "Sector Natividad Del Señor",
+    "direccion": "C. 24 de Febrero, Trabajadores, 66149 Cdad. Santa Catarina, N.L.",
+    "coordinadores": "Azeneth Gonzalez",
+    "telefono": "8126398842",
+    "coords": [25.680374059572028, -100.42284035888207],
+    "colors":["#006400", "#228B22"]
+  }
+]

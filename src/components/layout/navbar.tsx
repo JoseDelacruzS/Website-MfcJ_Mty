@@ -1,6 +1,8 @@
 "use client";
 
 import React from "react";
+import { useDisclosure } from "@heroui/react";
+import { ContactModal } from "@/components/contact/ContactModal";
 import Image from "next/image";
 import {
   Navbar as HeroNavbar,
@@ -18,12 +20,14 @@ import { usePathname } from "next/navigation";
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const pathname = usePathname();
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   const menuItems = [
     { name: "Inicio", href: "/" },
     { name: "Sala de Prensa", href: "/noticias" },
     { name: "Agenda", href: "/agenda" },
     { name: "Recursos", href: "/recursos" },
+    { name: "Sedes", href: "/sedes" },
   ];
 
   return (
@@ -88,9 +92,8 @@ export const Navbar = () => {
       <NavbarContent justify="end">
         <NavbarItem>
           <Button
-            as={Link}
             color="primary"
-            href="/contacto"
+            onClick={onOpen}
             className="font-bold text-white"
           >
             Contacto
@@ -114,6 +117,7 @@ export const Navbar = () => {
           </NavbarMenuItem>
         ))}
       </NavbarMenu>
+      <ContactModal isOpen={isOpen} onOpenChange={onOpenChange} />
     </HeroNavbar>
   );
 };

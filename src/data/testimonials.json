@@ -1,0 +1,31 @@
+
+[
+  {
+    "id": 1,
+    "quote":
+      "Llegué buscando amigos y encontré una familia. El MFCJ me enseñó que la fe se vive mejor acompañado.",
+    "name": "Juan Pablo",
+    "title": "Joven Ciclo I"
+  },
+  {
+    "id": 2,
+    "quote":
+      "La Pesca fue un antes y un después. No es solo un retiro, es el inicio de una vida nueva.",
+    "name": "Mariana G.",
+    "title": "Promotora de Área"
+  },
+  {
+    "id": 3,
+    "quote":
+      "Increíble cómo Dios usa estos espacios para hablarnos. ¡El Atrio Digital está quedando de lujo!",
+    "name": "Diego",
+    "title": "Equipo de Medios"
+  },
+  {
+    "id": 4,
+    "quote":
+      "Ser parte de esta comunidad me ha dado la fuerza para enfrentar los retos de la facultad.",
+    "name": "Sofía R.",
+    "title": "Joven Activa"
+  }
+]

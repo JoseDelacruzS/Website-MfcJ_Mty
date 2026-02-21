@@ -16,6 +16,7 @@ export const InfiniteMovingCards = ({
     quote: string;
     name: string;
     title: string;
+    image?: string; // Hacemos 'image' opcional por si algún testimonio no tiene foto
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -89,14 +90,14 @@ export const InfiniteMovingCards = ({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20 max-w-7xl overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)]",
+        "scroller relative z-20 max-w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)]",
         className,
       )}
     >
       <ul
         ref={scrollerRef}
         className={cn(
-          "flex w-max min-w-full shrink-0 flex-nowrap gap-6 py-8", // Más gap y padding vertical
+          "flex w-max min-w-full shrink-0 flex-nowrap gap-6 py-8",
           start && "animate-scroll",
           pauseOnHover && "hover:paused",
         )}
@@ -106,7 +107,6 @@ export const InfiniteMovingCards = ({
             key={`${item.name}-${idx}`}
             className="relative w-[350px] md:w-[450px] shrink-0 rounded-3xl p-1 group"
           >
-            {/* Contenedor Interior de la Tarjeta */}
             <div className="relative h-full w-full rounded-[20px] bg-secondary/90 backdrop-blur-xl border border-white/10 p-6 md:p-8 flex flex-col justify-between overflow-hidden transition-all duration-300 group-hover:scale-105 group-hover:border-primary">
               <Quote
                 className="absolute -right-4 -top-4 text-white/5 rotate-12 transition-transform duration-500 group-hover:rotate-0 group-hover:scale-110"
@@ -114,21 +114,19 @@ export const InfiniteMovingCards = ({
                 fill="currentColor"
               />
 
-              {/* Texto de la Cita */}
               <blockquote className="relative z-10 mb-6">
                 <p className="text-base md:text-lg leading-relaxed font-light text-gray-200 italic tracking-wide">
                   &quot;{item.quote}&quot;
                 </p>
               </blockquote>
 
-              {/* Pie de la tarjeta: Avatar e Info */}
               <div className="relative z-10 flex items-center gap-4 mt-auto border-t border-white/10 pt-4">
-                {/* 1. AVATAR DE HERO UI */}
                 <Avatar
                   isBordered
-                  name={item.name} // Genera iniciales si no hay src
-                  src={`https://i.pravatar.cc/150?u=${item.name}`} // Descomenta si quieres fotos random reales
-                  className="w-12 h-12 text-lg font-bold text-secondary bg-white"
+                  color="primary"
+                  name={item.name}
+                  src={item.image}
+                  className="w-12 h-12 text-lg font-bold"
                 />
 
                 <div className="flex flex-col">

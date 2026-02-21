@@ -4,8 +4,9 @@ import React from "react";
 import { Accordion, AccordionItem, Button } from "@heroui/react";
 import { motion } from "framer-motion";
 import { MessageCircleQuestion, Plus, Minus } from "lucide-react";
+import { useDisclosure } from "@heroui/react";
+import { ContactModal } from "@/components/contact/ContactModal";
 
-// Datos de las preguntas (puedes editarlos luego)
 const faqs = [
   {
     key: "1",
@@ -34,14 +35,11 @@ const faqs = [
 ];
 
 export const FaqSection = () => {
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
   return (
     <section className="pt-16 pb-24 bg-background overflow-hidden">
-      {/* Decoración de fondo sutil */}
-      <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-secondary/10 via-background to-background pointer-events-none" />
-
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start">
-          {/* --- COLUMNA IZQUIERDA: Texto y Llamada a la acción --- */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -70,7 +68,7 @@ export const FaqSection = () => {
               size="lg"
               className="bg-secondary text-white font-semibold  hover:scale-105 transition-transform"
               radius="full"
-              onPress={() => (window.location.href = "/contacto")} // O tu ruta de contacto
+              onClick={onOpen}
             >
               Tengo otra pregunta
             </Button>
@@ -116,6 +114,7 @@ export const FaqSection = () => {
           </motion.div>
         </div>
       </div>
+      <ContactModal isOpen={isOpen} onOpenChange={onOpenChange} />
     </section>
   );
 };

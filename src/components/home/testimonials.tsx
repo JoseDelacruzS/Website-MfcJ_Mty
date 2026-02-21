@@ -10,16 +10,16 @@ const testimonials = [
   {
     id: 1,
     quote:
-      "Llegué buscando amigos y encontré una familia. El MFCJ me enseñó que la fe se vive mejor acompañado.",
-    name: "Juan Pablo",
-    title: "Joven Ciclo I",
+      "Tengo 6 años en MFC, donde he crecido mucho en mi fe y en el servicio. Hoy soy equipera y recientemente coordinadora, un llamado que recibo con alegría. En mi parroquia María Reina de la Paz también sirvo como acólita los domingos por la tarde, entregando con amor mi tiempo a Dios.",
+    name: "Dania Gonzalez",
+    title: "Joven Coordinadora",
   },
   {
     id: 2,
     quote:
-      "La Pesca fue un antes y un después. No es solo un retiro, es el inicio de una vida nueva.",
-    name: "Mariana G.",
-    title: "Promotora de Área",
+      "Mi experiencia en el MFC ha sido muy significativa. Desde pequeña crecí en la Iglesia gracias a mis abuelos, y ahí encontré familias que me acogieron como una hija. Eso me enseñó que no estoy sola y que, con el apoyo correcto, sí puedo salir adelante.",
+    name: "Yamileth Hernandez",
+    title: "Coordinadora de Jóvenes",
   },
   {
     id: 3,

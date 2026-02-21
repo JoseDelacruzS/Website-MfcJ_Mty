@@ -14,10 +14,10 @@ export const Hero = () => {
           priority
           className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-b to-background" />
+        <div className="absolute inset-0 bg-linear-to-b to-background" />
       </div>
 
-      <div className="relative z-10 container mx-auto px-6 text-center flex flex-col items-center z-20">
+      <div className="relative z-10 container mx-auto px-6 text-center flex flex-col items-center">
         <h4 className="text-2xl text-accent font-bold tracking-[0.2em] uppercase mb-4">
           Movimiento Familiar Cristiano Juvenil
         </h4>
@@ -39,7 +39,8 @@ export const Hero = () => {
 
         {/* Subtítulo */}
         <p className="text-gray-200 text-lg md:text-xl mt-6 max-w-2xl font-light">
-          El lugar donde tu fe se encuentra con tu comunidad. Únete a la experiencia.
+          El lugar donde tu fe se encuentra con tu comunidad. Únete a la
+          experiencia.
         </p>
 
         {/* Botones temporales removidos (solicitud) */}
