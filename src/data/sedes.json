@@ -7,7 +7,7 @@
     "coordinadores": "Sebastian Cruz",
     "telefono": "8125801548",
     "coords": [25.665428035490606, -100.33843750491938] ,
-    "colors":["#E0FFFF", "#D3D3D3"]
+    "colors":["#B0E0E6", "#D3D3D3"]
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "coordinadores": "Jorge Valderrama",
     "telefono": "8126983840",
     "coords": [25.785135554725933, -100.46314185938252] ,
-    "colors":[ "#0000FF","#F0FFFF"]
+    "colors":["#DDA0DD", "#9932CC"]
   },
   {
     "id": 3,
@@ -47,5 +47,15 @@
     "telefono": "8126398842",
     "coords": [25.680374059572028, -100.42284035888207],
     "colors":["#006400", "#228B22"]
+  },
+  {
+    "id": 6,
+    "parroquia": "Parroquia Natividad del Señor de Monterrey",
+    "sector": "Sector El Refugio",
+    "direccion": "P.º de Los Conquistadores 700, Cumbres del Sur 3, 64610 Monterrey, N.L.",
+    "coordinadores": "Melissa Terrazas",
+    "telefono": "8661168581",
+    "coords": [25.71268484798616, -100.38303768129137],
+    "colors":[ "#0000FF","#F0FFFF"]
   }
 ]

@@ -7,7 +7,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
   const router = useRouter();
 
   return (
-    <HeroUIProvider navigate={router.push}>
+    <HeroUIProvider navigate={router.push} locale="es-MX">
       <ToastProvider placement="bottom-right" />
       {children}
     </HeroUIProvider>
