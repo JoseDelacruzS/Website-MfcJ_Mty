@@ -86,7 +86,7 @@ export const FaqSection = () => {
               selectionMode="multiple"
               className="px-0"
               itemClasses={{
-                base: "group mb-4 bg-white dark:bg-neutral-900 border border-black/5 dark:border-white/10 shadow-sm rounded-2xl transition-all duration-300 hover:border-primary hover:shadow-md",
+                base: "group mb-4 bg-white dark:bg-secondary/60 border border-black/5 dark:border-white/10 shadow-sm rounded-2xl transition-all duration-300 hover:border-primary hover:shadow-md ",
                 title:
                   "font-bold text-secondary dark:text-white text-lg text-left flex-1",
 
