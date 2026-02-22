@@ -18,15 +18,12 @@ const MapView = dynamic(() => import("@/components/sedes/MapView"), {
 export default function SedesPage() {
   const [activeSede, setActiveSede] = useState<number | null>(null);
 
-  // NUEVA FUNCIÓN: Maneja la selección bidireccional
   const handleSedeSelection = (id: number, fromMap: boolean = false) => {
-    setActiveSede(id); // Esto hará que el mapa "vuele" a la sede (si diste clic en la lista)
+    setActiveSede(id);
 
-    // Si el clic vino del MAPA, scrolleamos la lista de la izquierda hacia la tarjeta
     if (fromMap) {
       const element = document.getElementById(`tarjeta-sede-${id}`);
       if (element) {
-        // block: "center" asegura que la tarjeta quede en medio de la pantalla
         element.scrollIntoView({ behavior: "smooth", block: "center" });
       }
     }
@@ -48,12 +45,7 @@ export default function SedesPage() {
 
   return (
     <main className="min-h-screen bg-background text-foreground flex flex-col h-screen overflow-hidden">
-      {/* Mantenemos el mismo contenedor, ajustando el padding lateral un poco en móviles */}
       <div className="flex-1 flex flex-col md:flex-row h-[calc(100vh-64px)] overflow-hidden pt-20 px-4 md:px-6">
-        {/* PANEL IZQUIERDO (Lista) 
-            - En Desktop: Se queda exactamente igual a tu versión (w-1/3, h-full, border-r).
-            - En Celular: order-last (pasa abajo) y toma el espacio restante (flex-1).
-        */}
         <div className="w-full flex-1 md:h-full md:flex-none md:w-1/3 lg:w-[400px] overflow-y-auto p-4 md:p-6 scrollbar-hide border-white/10 z-10 md:border-r border-t md:border-t-0 order-last md:order-first">
           <div className="mb-8">
             <h1 className="text-3xl font-bold text-white mb-2">

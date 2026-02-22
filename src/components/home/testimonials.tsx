@@ -24,9 +24,9 @@ const testimonials = [
   {
     id: 3,
     quote:
-      "Increíble cómo Dios usa estos espacios para hablarnos. ¡El Atrio Digital está quedando de lujo!",
-    name: "Diego",
-    title: "Equipo de Medios",
+      "Mi experiencia más linda fue vivir mi primer mfciada en mty (yo era de la diosesis de Saltillo) y ver la hermandad que existía porque años después estoy siendo parte de un grupo de acá 🤍",
+    name: "Melissa Terrazas",
+    title: "Joven Coordinadora",
   },
   {
     id: 4,

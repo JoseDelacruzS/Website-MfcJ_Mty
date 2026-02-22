@@ -1,9 +1,15 @@
 "use client";
 
+import React from "react";
 import { Link } from "@heroui/react";
 import { Facebook, Instagram, MapPin, Mail } from "lucide-react";
+import { FaTiktok } from "react-icons/fa";
+import { email } from "@/utils/variables";
+import { PrivacyModal } from "./PrivacyModal";
+import { useDisclosure } from "@heroui/react";
 
 export const Footer = () => {
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const currentYear = new Date().getFullYear();
 
   return (
@@ -34,6 +40,13 @@ export const Footer = () => {
               >
                 <Instagram size={20} />
               </Link>
+              <Link
+                isExternal
+                href="https://www.tiktok.com/@mfcmonterrey"
+                className="text-white hover:text-accent transition-colors"
+              >
+                <FaTiktok size={20} />
+              </Link>
             </div>
           </div>
 
@@ -61,6 +74,11 @@ export const Footer = () => {
                   Descargables
                 </Link>
               </li>
+              <li>
+                <Link href="/sedes" className="text-gray-300 hover:text-white">
+                  Sedes
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -74,11 +92,8 @@ export const Footer = () => {
               </li>
               <li className="flex gap-2 items-center">
                 <Mail size={18} className="text-accent shrink-0" />
-                <a
-                  href="mailto:casadelmfc@gmail.com"
-                  className="hover:text-white"
-                >
-                  casadelmfc@gmail.com
+                <a href={`mailto:${email}`} className="hover:text-white">
+                  {email}
                 </a>
               </li>
             </ul>
@@ -89,15 +104,18 @@ export const Footer = () => {
             <h4 className="text-lg font-bold mb-4 text-accent">Legal</h4>
             <ul className="space-y-2 text-sm text-gray-300">
               <li>
-                <Link href="#" className="text-gray-300 hover:text-white">
+                <button
+                  onClick={onOpen}
+                  className="text-gray-300 hover:text-white transition-colors cursor-pointer text-left bg-transparent border-none p-0 m-0"
+                >
                   Aviso de Privacidad
-                </Link>
+                </button>
               </li>
-              <li>
+              {/* <li>
                 <Link href="#" className="text-gray-300 hover:text-white">
                   Reglamento Interno
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
@@ -109,11 +127,19 @@ export const Footer = () => {
             reservados.
           </p>
           <p className="mt-2 md:mt-0 flex items-center gap-1">
-            Hecho con <span className="text-red-500 animate-pulse">❤</span> por
-            el Equipo de Medios
+            Hecho con <span className="text-red-500 animate-pulse">💚</span> por
+            el{" "}
+            <Link
+              href="https://www.instagram.com/jesus_delacruzs/"
+              className="text-xs _flink"
+            >
+              {" "}
+              Area 1
+            </Link>
           </p>
         </div>
       </div>
+      <PrivacyModal isOpen={isOpen} onOpenChange={onOpenChange} />
     </footer>
   );
 };

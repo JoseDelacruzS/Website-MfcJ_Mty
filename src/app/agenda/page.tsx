@@ -10,7 +10,7 @@ export default function AgendaPage() {
           </span>
           <h1 className="text-4xl md:text-6xl font-black mt-4 mb-6 text-white">
             Agenda{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-500">
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-primary to-blue-900">
               MFCJ
             </span>
           </h1>
